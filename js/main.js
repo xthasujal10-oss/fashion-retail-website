@@ -1,4 +1,3 @@
-/* Hearth & Hem — shared interactions */
 (function () {
   "use strict";
 
