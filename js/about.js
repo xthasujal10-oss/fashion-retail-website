@@ -1,7 +1,3 @@
-/* =========================================================
-   about.js — accessible FAQ accordion
-   Runs only on about.html
-   ========================================================= */
 (function () {
   "use strict";
 
