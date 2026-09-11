@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Hearth &amp; Hem</title>
+  <meta name="description" content="Browse coats, knitwear, dresses, bottoms and accessories from Hearth & Hem, made from natural fibres in small batches." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html">Hearth <span>&amp;</span> Hem</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="device-preview-controls" aria-label="Responsive preview">
+          <span class="device-preview-label">Preview</span>
+          <button type="button" class="device-btn" data-preview-width="390" aria-label="Preview mobile layout">Mobile</button>
+          <button type="button" class="device-btn" data-preview-width="768" aria-label="Preview tablet layout">Tablet</button>
+          <button type="button" class="device-btn" data-preview-width="1440" aria-label="Preview desktop layout">Desktop</button>
+        </div>
+        <button type="button" class="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section-tight-bottom">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Shop the collection</h1>
+          <p class="lede">Twelve pieces, cut generously, made to be worn on repeat. Filter by category or search by name.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-chips" role="group" aria-label="Filter products by category">
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-filter="outerwear" aria-pressed="false">Outerwear</button>
+            <button type="button" class="chip" data-filter="knitwear" aria-pressed="false">Knitwear</button>
+            <button type="button" class="chip" data-filter="dresses" aria-pressed="false">Dresses</button>
+            <button type="button" class="chip" data-filter="bottoms" aria-pressed="false">Bottoms</button>
+            <button type="button" class="chip" data-filter="accessories" aria-pressed="false">Accessories</button>
+          </div>
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <label for="product-search" class="visually-hidden">Search products</label>
+            <input type="search" id="product-search" placeholder="Search products&hellip;" autocomplete="off" aria-describedby="results-count" />
+          </div>
+        </div>
+        <div class="shop-status-row"><p class="results-count" id="results-count" role="status" aria-live="polite">Showing 10 pieces</p><span class="loading-label" id="filter-loading" role="status" aria-live="polite" hidden>Updating collection…</span></div>
+      </div>
+    </section>
+
+    <section class="section-tight-top">
+      <div class="container">
+        <ul class="card-grid" id="product-grid">
+            <li class="card"
+                data-category="outerwear"
+                data-category-label="Outerwear"
+                data-name="Wool Field Coat"
+                data-price="$248"
+                data-desc="A heavyweight wool coat with a fall-away collar, cut long for layering through the colder months.">
+              <div class="card-media"><img class="product-photo" src="https://images.unsplash.com/photo-1559475492-145fc3848552?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200" alt="Wool field coat in a neutral tone" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Outerwear</span>
+                <h3>Wool Field Coat</h3>
+                <p>A heavyweight wool coat with a fall-away collar, cut long for layering through the colder months.</p>
+                <ul class="product-meta" aria-label="Product details"><li>100% wool</li><li>Relaxed fit</li><li>Made in small batch</li></ul>
+                <p class="card-price">$248</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="outerwear"
+                data-category-label="Outerwear"
+                data-name="Waxed Canvas Jacket"
+                data-price="$198"
+                data-desc="Weather-ready canvas with a soft brushed lining, built to soften and pattern with wear.">
+              <div class="card-media"><img class="product-photo" src="https://media.stories.com/assets/005/1d/16/1d16be8a29b040d8ec74f6c0dda0c9e3fd30a9e7.jpg" alt="Waxed canvas jacket in a neutral tone" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Outerwear</span>
+                <h3>Waxed Canvas Jacket</h3>
+                <p>Weather-ready canvas with a soft brushed lining, built to soften and pattern with wear.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Waxed cotton</li><li>Layering fit</li><li>Weather-ready</li></ul>
+                <p class="card-price">$198</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="knitwear"
+                data-category-label="Knitwear"
+                data-name="Ribbed Merino Sweater"
+                data-price="$128"
+                data-desc="Fine-gauge merino knitted in a single piece, with a ribbed hem and cuffs that hold their shape.">
+              <div class="card-media"><img class="product-photo" src="https://images.unsplash.com/photo-1587393795320-6e43b260ecd0?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200" alt="Ribbed merino sweater in a soft neutral tone" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Knitwear</span>
+                <h3>Ribbed Merino Sweater</h3>
+                <p>Fine-gauge merino knitted in a single piece, with a ribbed hem and cuffs that hold their shape.</p>
+                <ul class="product-meta" aria-label="Product details"><li>100% merino</li><li>Relaxed fit</li><li>Fine-gauge knit</li></ul>
+                <p class="card-price">$128</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="knitwear"
+                data-category-label="Knitwear"
+                data-name="Alpaca Crew Cardigan"
+                data-price="$164"
+                data-desc="A relaxed cardigan spun from brushed alpaca, finished with horn buttons and dropped shoulders.">
+              <div class="card-media"><img class="product-photo" src="https://images.unsplash.com/photo-1561216621-d4e07c4371a6?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200" alt="Neutral alpaca crew cardigan" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Knitwear</span>
+                <h3>Alpaca Crew Cardigan</h3>
+                <p>A relaxed cardigan spun from brushed alpaca, finished with horn buttons and dropped shoulders.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Alpaca blend</li><li>Dropped shoulder</li><li>Horn buttons</li></ul>
+                <p class="card-price">$164</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="dresses"
+                data-category-label="Dresses"
+                data-name="Linen Wrap Dress"
+                data-price="$142"
+                data-desc="Mid-weight linen that drapes rather than clings, with a self-tie waist and inseam pockets.">
+              <div class="card-media"><img class="product-photo" src="https://www.previewanddistrict.co.nz/user/images/71993_520_640.jpg?t=2510141216" alt="Natural linen wrap dress" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Dresses</span>
+                <h3>Linen Wrap Dress</h3>
+                <p>Mid-weight linen that drapes rather than clings, with a self-tie waist and inseam pockets.</p>
+                <ul class="product-meta" aria-label="Product details"><li>100% linen</li><li>Relaxed fit</li><li>Inseam pockets</li></ul>
+                <p class="card-price">$142</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="dresses"
+                data-category-label="Dresses"
+                data-name="Bias-Cut Slip Dress"
+                data-price="$118"
+                data-desc="Cut on the bias from recycled satin, this slip dress skims the body without clinging.">
+              <div class="card-media"><img class="product-photo" src="https://media.everlane.com/images/c_fill,w_3840,ar_250:312,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/2b62a652_844a/womens-short-sleeve-wrap-dress-cornstalk-chambray" alt="Minimal bias-cut slip dress" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Dresses</span>
+                <h3>Bias-Cut Slip Dress</h3>
+                <p>Cut on the bias from recycled satin, this slip dress skims the body without clinging.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Recycled satin</li><li>Bias cut</li><li>Easy drape</li></ul>
+                <p class="card-price">$118</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="bottoms"
+                data-category-label="Bottoms"
+                data-name="Straight Leg Trouser"
+                data-price="$118"
+                data-desc="A high-rise trouser in a mid-weight twill, tailored straight through the leg with a hidden hook fastening.">
+              <div class="card-media"><img class="product-photo" src="images/straight-leg-trouser.png" alt="Natural-toned straight leg trousers" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Bottoms</span>
+                <h3>Straight Leg Trouser</h3>
+                <p>A high-rise trouser in a mid-weight twill, tailored straight through the leg with a hidden hook fastening.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Mid-weight twill</li><li>High rise</li><li>Hidden hook</li></ul>
+                <p class="card-price">$118</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="bottoms"
+                data-category-label="Bottoms"
+                data-name="Pleated Midi Skirt"
+                data-price="$98"
+                data-desc="Soft knife pleats fall from a fitted waistband, landing at a mid-calf length that moves with you.">
+              <div class="card-media"><img class="product-photo" src="https://images.unsplash.com/photo-1561932850-f13404855e53?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1200" alt="Pleated midi skirt in a warm neutral tone" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Bottoms</span>
+                <h3>Pleated Midi Skirt</h3>
+                <p>Soft knife pleats fall from a fitted waistband, landing at a mid-calf length that moves with you.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Cotton blend</li><li>Midi length</li><li>Knife pleats</li></ul>
+                <p class="card-price">$98</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="accessories"
+                data-category-label="Accessories"
+                data-name="Brushed Wool Scarf"
+                data-price="$58"
+                data-desc="An oversized scarf in brushed lambswool, woven in small batches on traditional looms.">
+              <div class="card-media"><img class="product-photo" src="https://elora.com/cdn/shop/files/26PLEASE23GAIAECRU26PARIECRU-154-8638-retouched.jpg?width=1600" alt="Brushed wool scarf styled with neutral clothing" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Accessories</span>
+                <h3>Brushed Wool Scarf</h3>
+                <p>An oversized scarf in brushed lambswool, woven in small batches on traditional looms.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Lambswool</li><li>Oversized</li><li>Small-batch woven</li></ul>
+                <p class="card-price">$58</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+            <li class="card"
+                data-category="accessories"
+                data-category-label="Accessories"
+                data-name="Canvas Tote"
+                data-price="$64"
+                data-desc="A heavy-canvas tote reinforced at every seam, roomy enough for a day of errands or travel.">
+              <div class="card-media"><img class="product-photo" src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1600" alt="Clothing boutique display with canvas-style accessories" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <span class="card-tag">Accessories</span>
+                <h3>Canvas Tote</h3>
+                <p>A heavy-canvas tote reinforced at every seam, roomy enough for a day of errands or travel.</p>
+                <ul class="product-meta" aria-label="Product details"><li>Heavy canvas</li><li>Roomy fit</li><li>Reinforced seams</li></ul>
+                <p class="card-price">$64</p>
+                <div class="card-actions">
+                  <button type="button" class="btn btn-outline btn-small" data-quick-view>Quick view</button>
+                  <button type="button" class="icon-btn wishlist-btn" data-wishlist aria-label="Save this piece" aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </li>
+        </ul>
+        <p class="empty-state" id="empty-state">No pieces match that search just yet &mdash; try a different term or clear the filters.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="logo footer-logo">Hearth &amp; Hem</p>
+        <p class="footer-copy">Small-batch clothing made from natural fibres, designed to be worn for years rather than a season.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <div class="footer-links">
+          <a href="shop.html">All products</a>
+          <a href="shop.html#product-grid">New arrivals</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Hearth &amp; Hem. All rights reserved.</p>
+      <p>Prototype built for coursework &mdash; not a live store.</p>
+    </div>
+  </footer>
+
+  <!-- Quick view modal -->
+  <div class="modal-overlay" id="quick-view" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="qv-title" aria-describedby="qv-desc">
+      <button type="button" class="modal-close" aria-label="Close quick view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-body">
+        <div class="qv-media-wrap">
+          <div class="card-media qv-media" id="qv-media"></div>
+          <span class="qv-note">Small-batch / considered materials</span>
+        </div>
+        <div class="qv-content">
+          <span class="card-tag" id="qv-tag"></span>
+          <h2 id="qv-title" class="qv-title"></h2>
+          <p class="card-price qv-price" id="qv-price"></p>
+          <p id="qv-desc" class="qv-desc"></p>
+          <div class="qv-detail-block">
+            <p class="qv-label">Details</p>
+            <ul class="qv-details" id="qv-details"></ul>
+          </div>
+          <div class="qv-detail-block">
+            <p class="qv-label">Fit note</p>
+            <p id="qv-fit" class="qv-fit">Designed with a relaxed, easy-to-layer silhouette.</p>
+          </div>
+          <div class="qv-actions">
+            <a href="contact.html" class="btn qv-action">Enquire about this piece</a>
+            <button type="button" class="btn btn-outline qv-save" data-qv-save aria-pressed="false">♡ Save piece</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
