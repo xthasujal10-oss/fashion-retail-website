@@ -869,11 +869,6 @@ body {
   .card, .btn, .card-media .product-photo { transition: none; }
 }
 
-/* =========================================================
-   ICT203 responsive refinement — mobile-first
-   No CSS framework is used; Flexbox and CSS Grid provide the
-   responsive layout so the prototype remains lightweight.
-   ========================================================= */
 
 /* Base/mobile: comfortable touch targets and no horizontal overflow. */
 html { overflow-x: hidden; }
@@ -974,9 +969,7 @@ body { min-width: 320px; overflow-x: hidden; }
   .accordion-panel { transition: none; }
 }
 
-/* =========================================================
-   Final polish layer — editorial retail system
-   ========================================================= */
+
 :root {
   --container: 76rem;
   --radius-sm: 6px;
