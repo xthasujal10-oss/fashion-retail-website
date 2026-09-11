@@ -1,12 +1,3 @@
-
-/* Native hidden state must always win over component display rules. */
-[hidden] { display: none !important; }
-
-/* =========================================================
-   Hearth & Hem — stylesheet
-   Mobile-first. Flexbox + CSS Grid. No framework.
-   ========================================================= */
-
 /* ---------- Design tokens ---------- */
 :root {
   --color-bg: #EFE8D8;
