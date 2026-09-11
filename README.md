@@ -8,7 +8,7 @@ Implementation of a Responsive Front-End Web Interface).
 
 ## Live demo
 
-Deployed URL: _add your GitHub Pages (or other host) URL here before submission_
+Deployed URL: https://xthasujal10-oss.github.io/fashion-retail-website/
 
 ## Assessment evidence
 
@@ -107,7 +107,7 @@ The placeholder product illustrations were replaced with real retail/fashion pho
 Sources used include Unsplash and public product/editorial image hosts: Unsplash clothing boutique photo (Clark Street Mercantile), Unsplash fashion/coat and knitwear photos, and image-search results for linen dress, trousers and scarf imagery.
 
 
-## ICT203 responsive design notes
+## Responsive design notes
 - Industry context: Australian retail fashion prototype.
 - Mobile-first CSS is used: the base layout targets small screens first.
 - CSS Grid and Flexbox are used for navigation, hero, product cards, forms and footer layouts.
@@ -115,8 +115,4 @@ Sources used include Unsplash and public product/editorial image hosts: Unsplash
 - No prohibited framework is used. The site uses HTML5, CSS3 and vanilla JavaScript only.
 - Interactive controls use approximately 44px minimum touch targets, mobile overflow is constrained, and responsive layouts use minmax(0, 1fr) where appropriate.
 
-## Final visual polish and QA
 
-The final refinement adds a more editorial product-card system, richer quick-view detail presentation, saved-piece micro-interactions, resilient image loading/error states, refined tablet/desktop spacing, consistent focus treatment, reduced-motion support, and polished empty/loading feedback. The shop quick view remains keyboard accessible with focus trapping, Escape-to-close and focus restoration.
-
-Responsive live evidence is stored in `qa/LIVE-TEST-EVIDENCE.md`, with Chromium-rendered screenshots at 320px, 375px, 768px, 1024px and 1440px in `qa/screenshots/`.
