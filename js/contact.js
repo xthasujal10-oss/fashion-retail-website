@@ -1,8 +1,3 @@
-/* =========================================================
-   contact.js — client-side validation for the contact form
-   Runs only on contact.html. No backend: on success the form
-   resets and a confirmation message is shown.
-   ========================================================= */
 (function () {
   "use strict";
 
@@ -52,7 +47,6 @@
     return message === "";
   }
 
-  // Validate on blur for immediate, quiet feedback
   Array.prototype.forEach.call(form.elements, function (input) {
     if (!validators[input.name]) return;
     input.addEventListener("blur", function () { validateField(input); });
