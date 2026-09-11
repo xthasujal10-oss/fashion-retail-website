@@ -1,4 +1,3 @@
-/* Hearth & Hem — shop interactions */
 (function () {
   "use strict";
   var grid = document.getElementById("product-grid");
@@ -44,7 +43,6 @@
   if (searchInput) searchInput.addEventListener("input", applyFilters);
   applyFilters();
 
-  /* ---- Save / wishlist micro-interaction ---- */
   function toggleSaved(button) {
     var saved = button.getAttribute("aria-pressed") === "true";
     button.setAttribute("aria-pressed", String(!saved));
