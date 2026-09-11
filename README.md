@@ -97,8 +97,7 @@ npx serve .
   (grotesk sans) for body text and UI chrome.
 - **Layout:** left-aligned, editorial-style sections; CSS Grid for the
   product grid and value/process blocks, Flexbox for the header and forms.
-- Product imagery is original flat SVG illustration (not stock photography),
-  keeping the prototype dependency-free and fast to load.
+
 
 
 ## Photography sources
